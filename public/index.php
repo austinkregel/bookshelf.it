@@ -17,6 +17,7 @@ $dotenv->required(['TITLE']);
         <div>
             We currently have this website on our todo list, so we'll be getting to this soon. <?php if(!empty(getenv('URL'))):?>
             In the mean time you can checkout <a href="<?php echo getenv('URL'); ?>">our website</a>!
+            <?php endif; ?>
         </div>
     </div>
     </body>
