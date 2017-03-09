@@ -8,7 +8,7 @@ $dotenv->required(['TITLE']);
     <head>
         <title><?php echo getenv('TITLE'); ?></title>
         <style>
-            body { background: #eeeeee; font-size: 23px; } .center-the-dang-thing { position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-family:monospace, sans-serif; text-align:center; }
+            body { background: #eeeeee; font-size: 23px; } .center-the-dang-thing { position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-family:monospace, sans-serif; text-align:center; max-width: 400px; }
         </style>
     </head>
     <body>
