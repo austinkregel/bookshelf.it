@@ -1,12 +1,7 @@
-<?php
-require '../vendor/autoload.php';
-$dotenv = new Dotenv\Dotenv(__DIR__. '/../');
-$dotenv->load();
-$dotenv->required(['TITLE']);
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title><?php echo getenv('TITLE'); ?></title>
+        <title>Greetings stranger!</title>
         <style>
             body { background: #eeeeee; font-size: 23px; } .center-the-dang-thing { position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-family:monospace, sans-serif; text-align:center; min-width: 450px; }
         </style>
@@ -15,9 +10,7 @@ $dotenv->required(['TITLE']);
     <div class="center-the-dang-thing">
         <h3>Greetings stranger!</h3>
         <div>
-            We currently have this website on our todo list, so we'll be getting to this soon. <?php if(!empty(getenv('URL'))):?>
-            In the mean time you can checkout <a href="<?php echo getenv('URL'); ?>">our website</a>!
-            <?php endif; ?>
+            We currently have this website on our todo list, so we'll be getting to this soon.
         </div>
     </div>
     </body>
